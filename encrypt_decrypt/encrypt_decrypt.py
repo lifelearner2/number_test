@@ -17,7 +17,7 @@ def decrypt(ciphertext, shift):
     plaintext = ""
     for char in ciphertext:
         if char.isalpha():
-            # Shift each alphabetic character back by the specified shift value
+            # Shift each alphabetic character back by the specified shift value 
             if char.islower():
                 plaintext += chr((ord(char) - ord('a') - shift) % 26 + ord('a'))
             else:
